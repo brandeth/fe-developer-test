@@ -118,7 +118,7 @@ export default function SearchForm() {
           <input
             type="text"
             placeholder="Anywhere"
-            className="w-full border-gray-300 rounded-md shadow-sm focus:ring-2 focus:outline-none focus:border-primary-focus focus:ring-primary-focus p-4 py-3 bg-gray-100 text-xs md:text-base"
+            className="w-full border-gray-300 rounded-md shadow-sm focus:ring-2 focus:outline-none focus:border-primary-focus focus:ring-primary-focus p-4 py-3 bg-gray-100 text-xs md:text-base hover:bg-gray-200 transition-colors"
             value={location}
             onChange={handleLocationChange}
           />
@@ -133,7 +133,7 @@ export default function SearchForm() {
             </label>
             <input
               type="date"
-              className="w-full border-gray-300 rounded-md shadow-sm focus:ring-2 focus:outline-none focus:border-primary-focus focus:ring-primary-focus p-4 py-3 bg-gray-100 appearance-none text-xs md:text-base"
+              className="w-full border-gray-300 rounded-md shadow-sm focus:ring-2 focus:outline-none focus:border-primary-focus focus:ring-primary-focus p-4 py-3 bg-gray-100 appearance-none text-xs md:text-base hover:bg-gray-200 transition-colors"
               value={fromDate}
               placeholder="Add date"
               onChange={handleFromDateChange}
@@ -148,7 +148,7 @@ export default function SearchForm() {
             </label>
             <input
               type="date"
-              className="w-full border-gray-300 rounded-md shadow-sm focus:ring-2 focus:outline-none focus:border-primary-focus focus:ring-primary-focus p-4 py-3 bg-gray-100 appearance-none text-xs md:text-base"
+              className="w-full border-gray-300 rounded-md shadow-sm focus:ring-2 focus:outline-none focus:border-primary-focus focus:ring-primary-focus p-4 py-3 bg-gray-100 appearance-none text-xs md:text-base hover:bg-gray-200 transition-colors"
               value={toDate}
               placeholder="Add date"
               onChange={handleToDateChange}
@@ -166,7 +166,7 @@ export default function SearchForm() {
             </label>
             <div className="relative">
               <select
-                className="w-full border-gray-300 rounded-md shadow-sm focus:ring-2 focus:outline-none focus:border-primary-focus focus:ring-primary-focus p-4 py-3 bg-gray-100 appearance-none text-xs md:text-base"
+                className="w-full border-gray-300 rounded-md shadow-sm focus:ring-2 focus:outline-none focus:border-primary-focus focus:ring-primary-focus p-4 py-3 bg-gray-100 appearance-none text-xs md:text-base hover:bg-gray-200 transition-colors"
                 value={adults}
                 onChange={handleAdultsChange}
               >
@@ -200,7 +200,7 @@ export default function SearchForm() {
             </label>
             <div className="relative">
               <select
-                className="w-full border-gray-300 rounded-md shadow-sm focus:ring-2 focus:outline-none focus:border-primary-focus focus:ring-primary-focus p-4 py-3 bg-gray-100 appearance-none text-xs md:text-base"
+                className="w-full border-gray-300 rounded-md shadow-sm focus:ring-2 focus:outline-none focus:border-primary-focus focus:ring-primary-focus p-4 py-3 bg-gray-100 appearance-none text-xs md:text-base hover:bg-gray-200 transition-colors"
                 value={children}
                 onChange={handleChildrenChange}
               >
