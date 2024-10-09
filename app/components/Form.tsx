@@ -167,7 +167,7 @@ export default function SearchForm() {
             <div className="relative">
               <select
                 className="w-full border-gray-300 rounded-md shadow-sm focus:ring-2 focus:outline-none focus:border-primary-focus focus:ring-primary-focus p-4 py-3 bg-gray-100 appearance-none text-xs md:text-base"
-                value={children}
+                value={adults}
                 onChange={handleAdultsChange}
               >
                 {[1, 2, 3, 4, 5].map((n) => (
