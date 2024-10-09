@@ -101,7 +101,7 @@ export default function SearchForm() {
   };
 
   return (
-    <div className="max-w-md mx-auto bg-white p-6 md:p-8 rounded-lg shadow-lg md:absolute md:w-[26rem]">
+    <div className="max-w-md mx-auto bg-white p-6 md:p-8 rounded-lg shadow-lg md:absolute md:w-[27rem]">
       <Logo />
       <h1 className="font-bold mt-6 mb-4 text-lg md:text-2xl">
         Find places to stay anywhere
