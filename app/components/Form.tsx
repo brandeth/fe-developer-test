@@ -103,10 +103,10 @@ export default function SearchForm() {
   return (
     <div className="max-w-md mx-auto bg-white p-6 md:p-8 rounded-lg shadow-lg md:absolute md:w-[26rem]">
       <Logo />
-      <h1 className="font-bold mt-6 mb-4 text-xl md:text-2xl ">
+      <h1 className="font-bold mt-6 mb-4 text-lg md:text-2xl">
         Find places to stay anywhere
       </h1>
-      <p className="text-gray-600 mb-6 ">
+      <p className="text-gray-600 mb-6 text-sm md:text-base">
         Discover entire homes and rooms perfect for any trip or special
         occasion.
       </p>
@@ -118,7 +118,7 @@ export default function SearchForm() {
           <input
             type="text"
             placeholder="Anywhere"
-            className="w-full border-gray-300 rounded-md shadow-sm focus:ring-2 focus:outline-none focus:border-primary-focus focus:ring-primary-focus p-4 py-3 bg-gray-100"
+            className="w-full border-gray-300 rounded-md shadow-sm focus:ring-2 focus:outline-none focus:border-primary-focus focus:ring-primary-focus p-4 py-3 bg-gray-100 text-xs md:text-base"
             value={location}
             onChange={handleLocationChange}
           />
@@ -133,7 +133,7 @@ export default function SearchForm() {
             </label>
             <input
               type="date"
-              className="w-full border-gray-300 rounded-md shadow-sm focus:ring-2 focus:outline-none focus:border-primary-focus focus:ring-primary-focus p-4 py-3 bg-gray-100"
+              className="w-full border-gray-300 rounded-md shadow-sm focus:ring-2 focus:outline-none focus:border-primary-focus focus:ring-primary-focus p-4 py-3 bg-gray-100 appearance-none text-xs md:text-base"
               value={fromDate}
               placeholder="Add date"
               onChange={handleFromDateChange}
@@ -148,7 +148,7 @@ export default function SearchForm() {
             </label>
             <input
               type="date"
-              className="w-full border-gray-300 rounded-md shadow-sm focus:ring-2 focus:outline-none focus:border-primary-focus focus:ring-primary-focus p-4 py-3 bg-gray-100"
+              className="w-full border-gray-300 rounded-md shadow-sm focus:ring-2 focus:outline-none focus:border-primary-focus focus:ring-primary-focus p-4 py-3 bg-gray-100 appearance-none text-xs md:text-base"
               value={toDate}
               placeholder="Add date"
               onChange={handleToDateChange}
@@ -164,33 +164,69 @@ export default function SearchForm() {
             <label className="block text-gray-700 text-sm font-semibold mb-2">
               Adults
             </label>
-            <select
-              className="w-full border-gray-300 rounded-md shadow-sm focus:ring-2 focus:outline-none focus:border-primary-focus focus:ring-primary-focus p-4 py-3 bg-gray-100 pr-10 custom-select"
-              value={adults}
-              onChange={handleAdultsChange}
-            >
-              {[1, 2, 3, 4, 5].map((n) => (
-                <option key={n} value={n}>
-                  {n}
-                </option>
-              ))}
-            </select>
+            <div className="relative">
+              <select
+                className="w-full border-gray-300 rounded-md shadow-sm focus:ring-2 focus:outline-none focus:border-primary-focus focus:ring-primary-focus p-4 py-3 bg-gray-100 appearance-none text-xs md:text-base"
+                value={children}
+                onChange={handleAdultsChange}
+              >
+                {[1, 2, 3, 4, 5].map((n) => (
+                  <option key={n} value={n}>
+                    {n}
+                  </option>
+                ))}
+              </select>
+              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-700">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucide-chevron-down"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </div>
+            </div>
           </div>
           <div>
             <label className="block text-gray-700 text-sm font-semibold mb-2">
               Children
             </label>
-            <select
-              className="w-full border-gray-300 rounded-md shadow-sm focus:ring-2 focus:outline-none focus:border-primary-focus focus:ring-primary-focus p-4 py-3 bg-gray-100 custom-select"
-              value={children}
-              onChange={handleChildrenChange}
-            >
-              {[0, 1, 2, 3, 4, 5].map((n) => (
-                <option key={n} value={n}>
-                  {n}
-                </option>
-              ))}
-            </select>
+            <div className="relative">
+              <select
+                className="w-full border-gray-300 rounded-md shadow-sm focus:ring-2 focus:outline-none focus:border-primary-focus focus:ring-primary-focus p-4 py-3 bg-gray-100 appearance-none text-xs md:text-base"
+                value={children}
+                onChange={handleChildrenChange}
+              >
+                {[0, 1, 2, 3, 4, 5].map((n) => (
+                  <option key={n} value={n}>
+                    {n}
+                  </option>
+                ))}
+              </select>
+              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-700">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucide-chevron-down"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
         <button
