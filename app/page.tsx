@@ -14,7 +14,7 @@ export default function Home() {
           src="/banner.png"
           width={1000}
           height={760}
-          className="h-full md:w-full md:h-4/5 object-cover md:rounded-xl"
+          className="h-full md:w-full md:h-[90%] object-cover md:rounded-xl"
           alt="Living Room"
         />
       </div>
